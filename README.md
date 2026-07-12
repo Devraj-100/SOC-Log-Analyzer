@@ -1,0 +1,6 @@
+# Log Analyzer — SOC Analyst Edition 🛡️
+
+**Log Analyzer** is a Python-based cybersecurity tool that reads system and server logs to automatically detect suspicious activities such as **brute force login attempts**, **SQL injection**, **cross-site scripting (XSS)**, **path traversal attacks**, **credential stuffing**, and **HTTP error spikes**. It analyzes common log formats including Linux auth logs (`/var/log/auth.log`), web server access logs (Apache/Nginx), and syslog, then assigns each IP address a weighted **anomaly score** and **severity level** (INFO, LOW, MEDIUM, HIGH, CRITICAL). The tool outputs a clean **plain text report** to the console and optionally saves a **structured JSON report** — perfect for sharing with your team or feeding into a SIEM like Wazuh, ELK, or Splunk. It also includes **auto-generated remediation recommendations** based on what it finds, a **merge mode** to accumulate findings across multiple scans, and supports **CSV export** for spreadsheets. Built entirely with Python's standard library (no external dependencies required), this tool is ready to run on any system with Python 3.8+ and comes with a sample log file for immediate testing.
+
+## Project Structure
+
